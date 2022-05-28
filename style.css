@@ -1,0 +1,771 @@
+@font-face {
+  font-family: "font1";
+  src: url("./fonts/Allura-Regular.ttf");
+}
+
+@font-face {
+  font-family: "font2";
+  src: url("./fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "font3";
+  src: url("./fonts/Roboto-Light.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #21201e;
+}
+
+body h1 {
+  font-family: "font1";
+  color: #c0834e;
+}
+
+body h2 {
+  font-family: "font2";
+  text-transform: uppercase;
+}
+
+/*pause 16h48*/
+header {
+  background: url("./img/bg-slider-06.jpg") center/cover;
+  height: 85vh;
+  text-align: center;
+  color: #eeeeee;
+}
+
+header #title1 {
+  font-family: "font1";
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+header .nav_container {
+  font-family: "font3";
+  font-size: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header .nav_container ul {
+  text-transform: uppercase;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .nav_container ul li {
+  padding: 20px;
+}
+
+@media screen and (max-width: 680px) {
+  header .nav_container .navbar {
+    display: none;
+  }
+}
+
+header .welcome_container {
+  margin: 180px;
+}
+
+@media screen and (max-width: 680px) {
+  header .welcome_container {
+    margin: 0;
+  }
+}
+
+header .welcome_container h1 {
+  font-size: 4rem;
+  font-weight: lighter;
+}
+
+header .welcome_container h2 {
+  font-size: 4rem;
+}
+
+header .welcome_container p {
+  font-family: "font3";
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+#presentation {
+  background: #ececec;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#presentation .section_left {
+  width: 50%;
+  height: auto;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 680px) {
+  #presentation .section_left {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+#presentation .section_left .left_container {
+  border: 1px dashed black;
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#presentation .section_left h2 {
+  margin-bottom: 20px;
+}
+
+#presentation .section_left p {
+  font-family: "font3";
+}
+
+#presentation .section_left .chef {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#presentation .section_left .chef img {
+  margin: 30px auto 10px;
+  width: 90px;
+  border-radius: 50px;
+}
+
+#presentation .section_left .chef .chef_name {
+  font-family: "font2";
+  font-weight: bold;
+}
+
+#presentation .section_left .chef .chef_job {
+  font-family: font3;
+  text-transform: uppercase;
+  color: #bfbdba;
+}
+
+#presentation .section_right {
+  background: url("./img/store-01.jpg") center/cover;
+  width: 50%;
+  height: 450px;
+}
+
+@media screen and (max-width: 680px) {
+  #presentation .section_right {
+    display: none;
+  }
+}
+
+/**fini 22h32**/
+#menu {
+  background: #21201e;
+  color: #eeeeee;
+  position: relative;
+  text-align: center;
+  height: 1000px;
+}
+
+#menu h1 {
+  padding: 20px;
+}
+
+@media screen and (max-width: 680px) {
+  #menu h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+}
+
+#menu span img {
+  padding-bottom: 20px;
+}
+
+#menu .menu_navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 50%;
+  list-style-type: none;
+  font-family: "font3";
+}
+
+@media screen and (max-width: 680px) {
+  #menu .menu_navbar ul {
+    width: 90%;
+  }
+}
+
+#menu .menu_navbar ul li {
+  margin-bottom: 40px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+
+#menu .menu_container {
+  text-align: left;
+  background: #eeeeee;
+  color: #21201e;
+  font-family: "font3";
+  width: 60%;
+  margin: 0 auto;
+  padding: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
+  z-index: 100;
+  position: relative;
+  border-top: 4px solid #c0834e;
+}
+
+@media screen and (max-width: 680px) {
+  #menu .menu_container {
+    display: block;
+    width: 90%;
+  }
+}
+
+#menu .menu_container .food_items {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 65% 5%;
+  grid-template-columns: 30% 65% 5%;
+  padding: 20px;
+  border-bottom: 1px dashed #bfbdba;
+  width: 95%;
+}
+
+@media screen and (max-width: 680px) {
+  #menu .menu_container .food_items {
+    padding: 0;
+    -ms-grid-columns: 35% 60% 5%;
+    grid-template-columns: 35% 60% 5%;
+  }
+}
+
+#menu .menu_container .food_items img {
+  border-radius: 50%;
+}
+
+#menu .menu_container .food_items h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+#menu .menu_container .food_items .price {
+  color: #c0834e;
+  font-weight: bolder;
+}
+
+#menu::after {
+  content: "";
+  position: absolute;
+  background: url("/img/bg-menu-01.jpg") center/cover;
+  width: 100%;
+  height: 620px;
+  -webkit-transform: translate(-50%, -80%);
+  transform: translate(-50%, -80%);
+}
+
+#reservation {
+  background: #21201e;
+  width: 85%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+  grid-template-columns: 1fr 3fr;
+}
+
+@media screen and (max-width: 680px) {
+  #reservation {
+    margin: 200px auto 0;
+    display: block;
+  }
+}
+
+#reservation .reservation_left {
+  background: black;
+}
+
+@media screen and (max-width: 680px) {
+  #reservation .reservation_left {
+    padding: 15px;
+  }
+}
+
+#reservation .agenda {
+  margin: 20px;
+  border: 1px dashed white;
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: #eeeeee;
+}
+
+#reservation .agenda h4,
+#reservation .agenda p {
+  font-family: "font3";
+}
+
+#reservation .agenda h4 {
+  color: #c0834e;
+  text-transform: uppercase;
+}
+
+#reservation .agenda p {
+  margin: 20px auto 40px;
+}
+
+#reservation .reservation_right {
+  padding-top: 70px;
+  background: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+  #reservation .reservation_right {
+    padding: 20px;
+  }
+}
+
+#reservation .reservation_right h1 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+#reservation .reservation_right form {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [3];
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 680px) {
+  #reservation .reservation_right form {
+    display: block;
+  }
+}
+
+#reservation .reservation_right form .textarea {
+  height: 40px;
+  width: 200px;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px solid #bfbdba;
+}
+
+#reservation .reservation_right #booknow {
+  margin-top: 40px;
+  background: black;
+  color: white;
+  font-family: "font3";
+  text-transform: uppercase;
+  height: 50px;
+  width: 180px;
+  border-radius: 50px;
+  letter-spacing: 0.2rem;
+}
+
+#event {
+  text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+  #event {
+    display: none;
+  }
+}
+
+#event h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-top: 70px;
+}
+
+#event h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+#event span img {
+  margin-bottom: 25px;
+}
+
+#event .calendars {
+  background: white;
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas:
+    "a a c c"
+    "b b c c";
+  width: 80%;
+  margin: 0 auto;
+}
+
+#event .calendars #calendar1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: a;
+}
+
+#event .calendars .calendar_bg1 {
+  background: url(./img/event-01.jpg) center/cover;
+  width: 250px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#event .calendars .calendar_bg1 p {
+  background: #21201e;
+  color: white;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#event .calendars .calendar_bg1 p span {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+#event .calendars .calendar_bg2 {
+  background: url(./img/event-02.jpg) center/cover;
+  width: 250px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#event .calendars .calendar_bg2 p {
+  background: #21201e;
+  color: white;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#event .calendars .calendar_bg2 p span {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+#event .calendars .calendar_bg3 {
+  background: url(./img/event-03.jpg) center/cover;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#event .calendars .calendar_bg3 .calendar3_container {
+  background: white;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#event .calendars .calendar_bg3 .calendar3_container .calendar3_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 20px;
+  line-height: 3rem;
+}
+
+#event .calendars .calendar_bg3 .calendar3_container .calendar3_right .buy {
+  margin-top: 40px;
+}
+
+#event .calendars .calendar_bg3 .calendar3_container p {
+  background: #21201e;
+  color: white;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#event .calendars .calendar_bg3 .calendar3_container p span {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+#event .calendars #calendar2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: b;
+}
+
+#event .calendars #calendar3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: c;
+}
+
+#event .calendars .calendar {
+  border: 10px solid #21201e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "font3";
+  height: auto;
+}
+
+#event .calendars .calendar h5 {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+#event .calendars .calendar .localisation {
+  color: #bfbdba;
+  font-size: 0.9rem;
+}
+
+#event .calendars .calendar .buy {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+#event .calendars .calendar_right {
+  padding: 20px;
+  text-align-last: left;
+  line-height: 3rem;
+}
+
+#russel {
+  margin-top: 150px;
+  position: relative;
+  margin-bottom: 225px;
+}
+
+#russel::after {
+  content: "";
+  position: absolute;
+  background: url(./img/gmap.jpg) center/cover;
+  height: 350px;
+  width: 100%;
+  -webkit-transform: translateY(-35%);
+  transform: translateY(-35%);
+}
+
+.russel_container {
+  background: white;
+  width: 78.5%;
+  margin: 0 auto;
+  z-index: 1000;
+  position: relative;
+}
+
+.russel_container .description {
+  font-family: "font3";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.russel_container .description img {
+  position: absolute;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.russel_container .description p {
+  margin: 60px auto 30px;
+  width: 80%;
+  text-align: center;
+}
+
+.russel_container .description h6 {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.russel_container .description .ceo {
+  margin: 20px auto 40px;
+  color: #c0834e;
+}
+
+footer {
+  background: url(./img/bg-footer.jpg) center/cover;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 680px) {
+  footer {
+    background: #21201e;
+  }
+  footer .left_footer {
+    display: none;
+  }
+}
+
+footer h1 {
+  font-weight: lighter;
+  font-size: 2.3rem;
+}
+
+footer p {
+  font-family: "font3";
+  line-height: 2rem;
+}
+
+footer .left_footer {
+  padding: 40px 20px 20px 200px;
+  color: #aaaaaa;
+}
+
+footer .right_footer {
+  padding: 40px 200px 20px 40px;
+}
+
+footer .right_footer .follow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .right_footer ul {
+  margin-left: 20px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 50%;
+  color: #6d6d6d;
+}
+
+footer .right_footer .other {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bolder;
+}
+
+footer .right_footer #footer_email {
+  background: #21201e;
+  border: 1px solid #3f3f3f;
+  height: 40px;
+  width: 290px;
+  margin: 10px 0 40px 0;
+}
+/*# sourceMappingURL=style.css.map */

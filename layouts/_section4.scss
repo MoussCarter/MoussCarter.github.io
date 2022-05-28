@@ -1,0 +1,145 @@
+#event {
+    @media screen and (max-width:680px) {
+        display: none;
+    }
+    text-align: center;
+    h1 {
+        font-size: 2rem;
+        font-weight: lighter;
+        margin-top: 70px;
+    }
+    h2 {
+        color: white;
+        margin-bottom: 20px;
+    }
+    span img {
+        margin-bottom: 25px;
+    }
+    .calendars 
+    {
+        background: white;
+        display: grid;
+        grid-template-areas: 
+        "a a c c"
+        "b b c c";
+        width: 80%;
+        margin: 0 auto;
+        #calendar1 {
+            grid-area: a;
+        }
+        .calendar_bg1 {
+            background: url(../img/event-01.jpg) center/cover;
+            width: 250px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                background:$black1;
+                color: white;
+                width: 80px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                span {
+                    font-weight: bold;
+                    font-size: 1.3rem;
+                }
+            }
+
+        }
+        .calendar_bg2 {
+            background: url(../img/event-02.jpg) center/cover;
+            width: 250px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                background:$black1;
+                color: white;
+                width: 80px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                span {
+                    font-weight: bold;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .calendar_bg3 {
+            background: url(../img/event-03.jpg) center/cover;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            .calendar3_container {
+                background: white;
+                width: 90%;
+                height: 90%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .calendar3_right {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 20px;
+                    line-height: 3rem;
+                    .buy {
+                        margin-top: 40px;
+                    }
+                }
+                p {
+                    background:$black1;
+                    color: white;
+                    width: 80px;
+                    height: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    span {
+                        font-weight: bold;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+        #calendar2 {
+            grid-area: b;
+        }
+        #calendar3 {
+            grid-area: c;
+        }
+        .calendar {
+            border: 10px solid $black1;
+            //sinon faire un GAP dans le grid
+            display: flex;
+            font-family: "font3";
+            height: auto;
+            h5 {
+                font-size: 1.2rem;
+                font-weight: lighter;
+            }
+            .localisation {
+                color: $grey1;
+                font-size: 0.9rem;
+            }
+            .buy {
+                text-transform: uppercase;
+                font-weight: bolder;
+            }
+        }
+        .calendar_right {
+            padding: 20px;
+            text-align-last: left;
+            line-height: 3rem;
+        }
+    }
+}

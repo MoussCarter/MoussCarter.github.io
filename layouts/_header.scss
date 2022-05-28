@@ -1,0 +1,56 @@
+/*pause 16h48*/
+header 
+{
+    background:url("../img/bg-slider-06.jpg") center/cover;
+    height: 85vh;
+    text-align: center;
+    color:$white1;
+    #title1 {
+        font-family: "font1";
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+    .nav_container 
+    {
+        font-family: "font3";
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+        ul 
+        {
+            text-transform: uppercase;
+            list-style: none;
+            display: flex;
+            li 
+            {
+                padding: 20px;
+            }        
+        }
+        .navbar {
+            @media screen and (max-width:680px) {
+             display: none;   
+            }
+        }
+    }
+    .welcome_container 
+    {
+        margin: 180px;
+        @media screen and (max-width:680px) {
+            margin: 0;   
+           }
+        h1 {
+            font-size: 4rem;
+            font-weight: lighter;
+        }
+        h2 {
+            font-size: 4rem;
+        }
+        p {
+            font-family: "font3";
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+        }
+    }
+}

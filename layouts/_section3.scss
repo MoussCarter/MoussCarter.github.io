@@ -1,0 +1,75 @@
+#reservation {
+    background: $black1;
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    @media screen and (max-width:680px) {
+        margin: 200px auto 0;
+        display: block;
+    }
+    .reservation_left {
+        background: black;
+        @media screen and (max-width:680px) {
+            padding: 15px;
+        }
+    }
+    .agenda {
+        margin: 20px;
+        border: 1px dashed white;
+        text-align: center;
+        padding: 20px;
+        background: black;
+        color:$white1;
+        h4,p {
+            font-family: "font3";
+        }
+        h4 {
+            color: $orange1;
+            text-transform: uppercase;
+        }
+        p {
+            margin:20px auto 40px;
+        }
+    }
+    .reservation_right {
+        padding-top: 70px;
+        background: white;
+        text-align: center;
+        @media screen and (max-width:680px) {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: lighter;
+        }
+        form {
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            @media screen and (max-width:680px) {
+                display: block;
+            }
+            .textarea {
+                height: 40px;
+                width: 200px;
+                margin: 0 auto;
+                border:none;
+                border-bottom: 1px solid $grey1;
+            }
+        }
+        #booknow {
+            margin-top: 40px;
+            background: black;
+            color: white;
+            font-family: "font3";
+            text-transform: uppercase;
+            height: 50px;
+            width: 180px;
+            border-radius: 50px;
+            letter-spacing: 0.2rem;
+        }
+    }
+}

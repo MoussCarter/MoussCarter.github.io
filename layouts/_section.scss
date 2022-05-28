@@ -1,0 +1,60 @@
+#presentation
+{
+    background: $white2;
+    text-align: center;
+    display: flex;
+    .section_left 
+    {
+        width: 50%;
+        height: auto;
+        margin-top: 20px;
+        @media screen and (max-width:680px) {
+            width: 100%;
+            margin: 20px;
+        }
+        .left_container {
+            border: 1px dashed black;
+            padding: 20px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        h2 
+        {
+            margin-bottom: 20px;
+        }
+        p
+        {
+            font-family: "font3";
+        }
+        .chef 
+        {
+            display: flex;
+            flex-direction: column;
+            img 
+            {
+                margin: 30px auto 10px;
+                width: 90px;
+                border-radius: 50px;
+            }
+            .chef_name {
+                font-family: "font2";
+                font-weight: bold;
+            }
+            .chef_job {
+                font-family: font3;
+                text-transform: uppercase;
+                color: $grey1;
+            }
+        }
+    }
+    .section_right
+    {
+        background: url("../img/store-01.jpg") center/cover;
+        width: 50%;
+        height: 450px;
+        @media screen and (max-width:680px) {
+            display: none;
+        }
+    }
+}
+/**fini 22h32**/
