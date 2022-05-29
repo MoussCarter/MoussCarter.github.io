@@ -5,6 +5,9 @@ header
     height: 85vh;
     text-align: center;
     color:$white1;
+    @media screen and (max-width:900px) {
+        height: 40vh;
+    }
     #title1 {
         font-family: "font1";
         font-size: 3rem;
@@ -36,15 +39,21 @@ header
     .welcome_container 
     {
         margin: 180px;
-        @media screen and (max-width:680px) {
+        @media screen and (max-width:900px) {
             margin: 0;   
            }
         h1 {
             font-size: 4rem;
             font-weight: lighter;
+            @media screen and (max-width:900px){
+            font-size:3rem;
+            }
         }
         h2 {
             font-size: 4rem;
+            @media screen and (max-width:900px){
+            font-size:2rem;
+            }
         }
         p {
             font-family: "font3";
