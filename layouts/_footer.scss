@@ -31,9 +31,13 @@ footer {
     .left_footer, .right_footer {
         padding: 26px 30px;
         max-width: 500px;
+
     }
     .left_footer {
         color: rgb(170, 170, 170);
+        @media screen and (max-width:1300px) {
+            max-width: 100%;
+        }
     }
     .right_footer 
     {
