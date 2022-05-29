@@ -1,17 +1,24 @@
 footer {
     background: url("../img/bg-footer.jpg") center/cover;
     color: white;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    @media screen and (max-width:900px) {
+    text-align: left;
+    @media screen and (max-width:1020px) {
         display:block;
         background: $black1;
         .left_footer {
             display: none;
         }
-        .right_footer {
-            width: 100%;
-        }
+    }
+    .footer_container
+    {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    @media screen and (max-width:1020px) {
+        display: grid;
+        grid-template-columns:1fr;
+    }
     }
     h1 {
         font-weight: lighter;
@@ -19,44 +26,47 @@ footer {
     }
     p {
         font-family: "font3";
-        line-height: 2rem;
+        line-height: 1rem;
+    }
+    .left_footer, .right_footer {
+        padding: 26px 30px;
+        max-width: 500px;
     }
     .left_footer {
-        padding: 40px 20px 20px 200px;
         color: rgb(170, 170, 170);
     }
-    .right_footer {
-        .right_container {
-            width: 100%;
-        }
-        padding: 40px 200px 20px 40px;
-        width: 100%;
-        .follow {
-            width: 100%;
-        }
-        ul {
-            margin-left: 20px;
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-            min-width: 200px;
-            color: rgb(109, 109, 109);
-        }
-        .other {
-            text-transform: uppercase;
-            color: white;
+    .right_footer 
+    {
+        p {
+            font-family: "font3";
             font-weight: bolder;
+            font-size: 0.8rem;
+            text-transform: uppercase;
         }
-        #footer_email {
+        #footer_email 
+        {
             background: $black1;
             border: 1px solid rgb(63, 63, 63);
             height: 40px;
-            width: 290px;
+            width: 50%;
+            max-width: 290px;
+            min-width: 176px;
+            color: white;
             @media screen and (max-width:320px) {
                 width: auto;
             }
             margin:10px 0 40px 0
         }
-
+        .follow {
+            display: flex;
+        }
+                ul {
+            width: 50%;
+            margin-left: 20px;
+            display: flex;
+            justify-content: space-around;
+            min-width: 220px;
+            color: rgb(109, 109, 109);
+        }
     }
 }

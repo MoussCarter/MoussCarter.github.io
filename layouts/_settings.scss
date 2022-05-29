@@ -36,15 +36,19 @@ body
         font-family: "font2";
         text-transform: uppercase;
     }
-}
-@media screen and (max-width: 400px) and (orientation: landscape) {
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
+    ul {
+        list-style:none;
     }
-  }
+}
+// edit : beaucoup plus simple avec JS, un lockOrientation portrait ou landscape. oublier en css
+// @media screen and (max-width: 400px) and (orientation: landscape) {
+//     html {
+//       transform: rotate(90deg);
+//       transform-origin: left top;
+//       width: 100vh;
+//       overflow-x: hidden;
+//       position: absolute;
+//       top: 100%;
+//       left: 0;
+//     }
+//   }

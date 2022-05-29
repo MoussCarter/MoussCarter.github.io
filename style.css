@@ -34,18 +34,8 @@ body h2 {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 400px) and (orientation: landscape) {
-  html {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-    -webkit-transform-origin: left top;
-            transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
+body ul {
+  list-style: none;
 }
 
 /*pause 16h48*/
@@ -76,7 +66,6 @@ header .nav_container {
 
 header .nav_container ul {
   text-transform: uppercase;
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,7 +187,14 @@ header .welcome_container p {
   color: #eeeeee;
   position: relative;
   text-align: center;
-  height: 1000px;
+  height: 100%;
+  padding-bottom: 200px;
+}
+
+@media screen and (max-width: 1380px) {
+  #menu {
+    padding-bottom: 100px;
+  }
 }
 
 #menu h1 {
@@ -321,6 +317,14 @@ header .welcome_container p {
           transform: translate(-50%, -80%);
 }
 
+@media screen and (max-width: 1380px) {
+  #menu::after {
+    -webkit-transform: translate(-50%, -160%);
+            transform: translate(-50%, -160%);
+    height: 40%;
+  }
+}
+
 #reservation {
   background: #21201e;
   width: 85%;
@@ -329,6 +333,7 @@ header .welcome_container p {
   display: grid;
   -ms-grid-columns: 1fr 3fr;
       grid-template-columns: 1fr 3fr;
+  position: relative;
 }
 
 @media screen and (max-width: 680px) {
@@ -735,13 +740,10 @@ header .welcome_container p {
 footer {
   background: url("../img/bg-footer.jpg") center/cover;
   color: white;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  text-align: left;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1020px) {
   footer {
     display: block;
     background: #21201e;
@@ -749,8 +751,23 @@ footer {
   footer .left_footer {
     display: none;
   }
-  footer .right_footer {
-    width: 100%;
+}
+
+footer .footer_container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+@media screen and (max-width: 1020px) {
+  footer .footer_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -761,50 +778,33 @@ footer h1 {
 
 footer p {
   font-family: "font3";
-  line-height: 2rem;
+  line-height: 1rem;
+}
+
+footer .left_footer, footer .right_footer {
+  padding: 26px 30px;
+  max-width: 500px;
 }
 
 footer .left_footer {
-  padding: 40px 20px 20px 200px;
   color: #aaaaaa;
 }
 
-footer .right_footer {
-  padding: 40px 200px 20px 40px;
-  width: 100%;
-}
-
-footer .right_footer .right_container {
-  width: 100%;
-}
-
-footer .right_footer .follow {
-  width: 100%;
-}
-
-footer .right_footer ul {
-  margin-left: 20px;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  min-width: 200px;
-  color: #6d6d6d;
-}
-
-footer .right_footer .other {
-  text-transform: uppercase;
-  color: white;
+footer .right_footer p {
+  font-family: "font3";
   font-weight: bolder;
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }
 
 footer .right_footer #footer_email {
   background: #21201e;
   border: 1px solid #3f3f3f;
   height: 40px;
-  width: 290px;
+  width: 50%;
+  max-width: 290px;
+  min-width: 176px;
+  color: white;
   margin: 10px 0 40px 0;
 }
 
@@ -812,5 +812,23 @@ footer .right_footer #footer_email {
   footer .right_footer #footer_email {
     width: auto;
   }
+}
+
+footer .right_footer .follow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .right_footer ul {
+  width: 50%;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-width: 220px;
+  color: #6d6d6d;
 }
 /*# sourceMappingURL=style.css.map */
