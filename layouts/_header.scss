@@ -29,9 +29,9 @@ header
             }        
         }
         .navbar {
-            @media screen and (max-width:680px) {
-             display: none;   
-            }
+            @media screen and (max-width:900px) {
+                display: none;   
+               }
         }
     }
     .welcome_container 

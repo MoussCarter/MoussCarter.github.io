@@ -8,6 +8,7 @@
         margin: 200px auto 0;
         display: block;
     }
+
     .reservation_left {
         background: black;
         @media screen and (max-width:680px) {
@@ -58,6 +59,14 @@
                 margin: 0 auto;
                 border:none;
                 border-bottom: 1px solid $grey1;
+            }
+            @media screen and (max-width:1170px) {
+                width: auto;
+
+                    .textarea {
+                        width: 50%;
+                    }
+
             }
         }
         #booknow {

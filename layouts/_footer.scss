@@ -3,7 +3,8 @@ footer {
     color: white;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    @media screen and (max-width:680px) {
+    @media screen and (max-width:900px) {
+        display:block;
         background: $black1;
         .left_footer {
             display: none;
@@ -23,6 +24,7 @@ footer {
     }
     .right_footer {
         padding: 40px 200px 20px 40px;
+        width: 100%;
         .follow {
             display: flex;
         }
