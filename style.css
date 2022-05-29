@@ -50,13 +50,13 @@ header {
 
 @media screen and (max-width: 1300px) {
   header {
-    height: 50vh;
+    height: 40vh;
   }
 }
 
 @media screen and (max-width: 900px) {
   header {
-    height: 40vh;
+    height: 30vh;
   }
 }
 
@@ -99,7 +99,7 @@ header .welcome_container {
   margin: 180px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1300px) {
   header .welcome_container {
     margin: 0;
   }
