@@ -20,6 +20,20 @@
           box-sizing: border-box;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
 body {
   background: #21201e;
 }
@@ -775,5 +789,11 @@ footer .right_footer #footer_email {
   height: 40px;
   width: 290px;
   margin: 10px 0 40px 0;
+}
+
+@media screen and (max-width: 320px) {
+  footer .right_footer #footer_email {
+    width: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

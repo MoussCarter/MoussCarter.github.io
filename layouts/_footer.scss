@@ -46,6 +46,9 @@ footer {
             border: 1px solid rgb(63, 63, 63);
             height: 40px;
             width: 290px;
+            @media screen and (max-width:320px) {
+                width: auto;
+            }
             margin:10px 0 40px 0
         }
 
