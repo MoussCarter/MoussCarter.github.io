@@ -43,9 +43,15 @@ body ul {
 /*pause 16h48*/
 header {
   background: url("../img/bg-slider-06.jpg") center/cover;
-  height: 100vh;
+  height: 85vh;
   text-align: center;
   color: #eeeeee;
+}
+
+@media screen and (max-width: 1300px) {
+  header {
+    height: 50vh;
+  }
 }
 
 @media screen and (max-width: 900px) {
