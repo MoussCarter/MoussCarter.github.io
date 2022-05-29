@@ -48,10 +48,17 @@
         z-index: 100;
         position: relative;
         border-top: 4px solid $orange1;
-        @media screen and (max-width:680px) {
+        @media screen and (max-width:1380px) {
             display: block;
-            width: 90%;
+            width: 50%;
         }
+        @media screen and (max-width:1000px) {
+            width: 60%;
+        }
+        @media screen and (max-width:750px) {
+            width: 85%;
+        }
+        
         
         .food_items 
         {   

@@ -20,20 +20,6 @@
           box-sizing: border-box;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-  html {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-    -webkit-transform-origin: left top;
-            transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-}
-
 body {
   background: #21201e;
 }
@@ -257,10 +243,22 @@ header .welcome_container p {
   border-top: 4px solid #c0834e;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1380px) {
   #menu .menu_container {
     display: block;
-    width: 90%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #menu .menu_container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #menu .menu_container {
+    width: 85%;
   }
 }
 
